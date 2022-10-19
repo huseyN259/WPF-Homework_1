@@ -1,0 +1,32 @@
+﻿<Window x:Class="HW.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HW"
+        mc:Ignorable="d"
+        Title="MYSELF" Height="500" Width="850" WindowState="Maximized">
+
+    <Grid Name="Grid">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Button Width="150" Height="100" Background="Orange" FontSize="30" Content="1" Click="Button_Click" MouseRightButtonDown="Button_MouseRightButtonDown"></Button>
+        <Button Grid.Column="1" Width="150" Height="100" Background="Pink" FontSize="30" Content="2" Click="Button_Click" MouseRightButtonDown="Button_MouseRightButtonDown"></Button>
+        <Button Grid.Column="2" Width="150" Height="100" Background="Blue" FontSize="30" Content="3" Click="Button_Click" MouseRightButtonDown="Button_MouseRightButtonDown"></Button>
+        <Button Grid.Row="1" Width="150" Height="100" Background="Red" FontSize="30" Content="4" Click="Button_Click" MouseRightButtonDown="Button_MouseRightButtonDown"></Button>
+        <Button Grid.Row="1" Grid.Column="1" Width="150" Height="100" Background="Purple" FontSize="30" Content="5" Click="Button_Click" MouseRightButtonDown="Button_MouseRightButtonDown"></Button>
+        <Button Grid.Row="1" Grid.Column="2" Width="150" Height="100" Background="Gray" FontSize="30" Content="6" Click="Button_Click" MouseRightButtonDown="Button_MouseRightButtonDown"></Button>
+
+    </Grid>
+
+</Window>
